@@ -7,7 +7,7 @@ function MainMenu() {
     <div className="main-menu-container">
       <div className="header">
         <h1>
-        <Link to="/main-menu" className='moodify' >MOODIFY</Link>
+        <Link to="/main-menu" className='moodify' >MOODIFY</Link> {/*sujeto a cambios, quizas por un icono?*/}
            </h1>
         <div className="user-info">
           <img
