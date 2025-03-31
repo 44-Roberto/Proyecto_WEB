@@ -3,6 +3,9 @@ import Header from '../componentes/Header';
 import './Historico.css';
 
 function Historico() {
+
+  const spotifyPlaylist ="https://open.spotify.com/playlist/78hpewry24Y9v3A5aOihPU?si=faa069f941d74d8c";
+
   return (
     <div className="history-container">
       <Header />
@@ -15,7 +18,7 @@ function Historico() {
           <ul className="song-list">
             <li>
               🎵 Canción 1 - Artista 1 {' '}
-              <a href="#">
+              <a href={spotifyPlaylist}>
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/7477/7477009.png"
                   alt="Play"
@@ -25,7 +28,7 @@ function Historico() {
             </li>
             <li>
               🎵 Canción 2 - Artista 2 {' '}
-              <a href="#">
+              <a href={spotifyPlaylist}>
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/7477/7477009.png"
                   alt="Play"
@@ -35,7 +38,7 @@ function Historico() {
             </li>
             <li>
               🎵 Canción 3 - Artista 3 {' '}
-              <a href="#">
+              <a href={spotifyPlaylist}>
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/7477/7477009.png"
                   alt="Play"
@@ -51,7 +54,7 @@ function Historico() {
           <ul className="song-list">
             <li>
               🎵 Canción 1 - Artista 1 {' '}
-              <a href="#">
+              <a href={spotifyPlaylist}>
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/7477/7477009.png"
                   alt="Play"
@@ -61,7 +64,7 @@ function Historico() {
             </li>
             <li>
               🎵 Canción 2 - Artista 2 {' '}
-              <a href="#">
+              <a href={spotifyPlaylist}>
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/7477/7477009.png"
                   alt="Play"
