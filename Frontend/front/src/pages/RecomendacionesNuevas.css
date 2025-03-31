@@ -1,0 +1,72 @@
+.recommendation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .recommendation-content {
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  
+  
+  .upload-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .upload-button {
+    background-color: #424141;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .upload-button:hover {
+    opacity: 0.9;
+  }
+  
+  .result-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .uploaded-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .recommendation-button {
+    background-color: #424141;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, opacity 0.3s;
+  }
+  
+  .recommendation-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  

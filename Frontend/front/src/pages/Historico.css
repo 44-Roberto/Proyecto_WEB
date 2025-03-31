@@ -1,0 +1,77 @@
+.history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .history-list {
+    text-align: center;
+    max-width: 900px;
+    margin-top: 100px;
+    padding: 20px;
+  }
+  
+  .history-list h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .history-section {
+    margin-bottom: 40px;
+  }
+  
+  .history-section h4 {
+    font-size: 20px;
+    color: #8965A1;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  
+  .song-list {
+    list-style: none;
+    text-align: left;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-left: 10px; 
+    scrollbar-width: thin;
+    text-align: center;
+  }
+  
+  
+  .song-list li {
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .song-list li:hover {
+    background-color: #222;
+    border-radius: 5px;
+  }
+  
+  .song-list a {
+    color: #8965A1;
+    text-decoration: none;
+  }
+  
+  .song-list a:hover {
+    text-decoration: underline;
+  }
+  .play-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: transform 0.2s ease;
+  }
+  
+  .play-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  

@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./LoginPage.css";
+import Header from '../componentes/Header';
 
 function LoginPage() {
   return (
    
     <div className="login-container">
-      <div className="login-header">
-        <div className="logo-container">
-        </div>
-      </div>      
+       <Header />     
       <div className="login-card">
       <h1 className="titulo" >Iniciar Sesión</h1>
 

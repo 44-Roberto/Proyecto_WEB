@@ -1,15 +1,12 @@
 import React from "react";
 import { Link } from 'react-router-dom'; 
 import "./LoginPage.css"; 
+import Header from "../componentes/Header";
 
 function LoginPage() {
   return (
     <div className="login-container">
-      <div className="login-header">
-        <div className="logo-container">
-         
-        </div>
-      </div>
+       <Header />
       <div className="login-card">
       <h1 className="titulo" >Registrarse</h1>
       <br></br>
@@ -45,7 +42,7 @@ function LoginPage() {
           />
         </div>
          <Link to="/" className="register-btn2"> 
-                  Iniciar Sesión
+                  Registrarse
                 </Link>
       </div>
     </div>
