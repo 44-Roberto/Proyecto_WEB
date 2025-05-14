@@ -15,13 +15,21 @@ function Header() {
           MOODIFY
         </Link>
       </h1>
+       <div className="header-left">
+        
+      </div>
       <div className="user-info">
+         <Link to="/" className="logout-link">
+          Cerrar Sesión
+        </Link>
         <img
           src="https://cdn-icons-png.flaticon.com/512/2102/2102633.png"
           alt="Usuario"
           className="user-icon"
         />
+       
       </div>
+      
     </header>
   );
 }

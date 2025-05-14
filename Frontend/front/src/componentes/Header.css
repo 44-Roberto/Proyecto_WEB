@@ -10,6 +10,51 @@
     z-index: 1000;
   }
   
+.logout-link {
+  color: white;
+  text-decoration: none;
+  margin-right: auto; 
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start; /* Alinea los elementos al inicio (izquierda) */
+}
+
+.logout-link:hover {
+  
+  text-decoration: none;
+}
+
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .app-name {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .search-bar {
+    width: 300px; 
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+}
+
   .moodify {
     display: flex;
     align-items: center;
