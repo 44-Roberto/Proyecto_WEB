@@ -6,6 +6,12 @@
     background-color: #161616; 
   }
   
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
   .login-header {
     background-color: #8965A1; 
     color: white;

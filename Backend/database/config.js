@@ -1,7 +1,7 @@
 const {Sequelize}=require("sequelize");
 
 const sequelize = new Sequelize(
-    "ejercicio",// Database name
+    "proyecto",// Database name
     "root",// Username
     "",// Password
     {

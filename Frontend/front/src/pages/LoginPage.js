@@ -1,9 +1,41 @@
-import React from "react";
-import { Link } from 'react-router-dom';
+import React, {useState} from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import "./LoginPage.css";
 
 
 function LoginPage() {
+
+//const [nombreUsuario, setNombreUsuario] = useState('');
+const [email, setEmail] = useState(''); 
+  const [contrasena, setContrasena] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  const handleLogin = async () => {
+    setError('');
+    try {
+      const response = await fetch('http://localhost:3001/login', { 
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: email, contrasena }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        localStorage.setItem('token', data.token); // Almacena el token
+        navigate('/main-menu');
+      } else {
+        setError(data.message || 'Error al iniciar sesión');
+      }
+    } catch (error) {
+      console.error('Error al conectar con el servidor:', error);
+      setError('Error al conectar con el servidor');
+    }
+  };
+
 return (
   
 <div className="login-container">
@@ -29,7 +61,7 @@ return (
 
     <div className="login-card">
     <h1 className="titulo" >Iniciar Sesión</h1>
-
+    {error && <p className="error-message">{error}</p>}
     <br></br>
           
       <img
@@ -44,6 +76,8 @@ return (
           type="email"
           id="correo"
           className="input-field"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div className="input-group">
@@ -52,12 +86,14 @@ return (
           type="password"
           id="contrasena"
           className="input-field"
+          value={contrasena}
+          onChange={(e) => setContrasena(e.target.value)}
         />
       </div>
       <Link to="/register" className="register-btn">
         Registrarse
       </Link>
-      <Link to="/main-menu" className="login-btn">
+      <Link className="login-btn" onClick={handleLogin}>
         Iniciar Sesión
       </Link>
     </div>
