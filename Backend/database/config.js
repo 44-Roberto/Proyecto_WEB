@@ -3,10 +3,9 @@ const {Sequelize}=require("sequelize");
 const sequelize = new Sequelize(
     "proyecto",// Database name
     "root",// Username
-    "root123",// Password
+    "",// Password
     {
-        host:"localhost",
-        port: 3307,
+        host:"127.0.0.1",
         dialect: "mysql",
         logging: false,
         define:{
@@ -14,5 +13,4 @@ const sequelize = new Sequelize(
         }
     }
 );
-
 module.exports = sequelize;
