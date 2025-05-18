@@ -3,9 +3,10 @@ const {Sequelize}=require("sequelize");
 const sequelize = new Sequelize(
     "proyecto",// Database name
     "root",// Username
-    "",// Password
+    "root123",// Password
     {
-        host:"127.0.0.1",
+        host:"localhost",
+        port: 3307,
         dialect: "mysql",
         logging: false,
         define:{

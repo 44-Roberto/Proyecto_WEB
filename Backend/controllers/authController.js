@@ -1,4 +1,5 @@
-const User = require('../database/models/user.js'); 
+const { User } = require('../database/models');
+
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const secretKey = process.env.JWT_SECRET || '1273020o1221120';// La clave son los dos carnets separados por una o
@@ -24,7 +25,7 @@ console.log('llego aca');
     // Generar JWT
     const token = jwt.sign({ userId: user.id }, secretKey, { expiresIn: '1h' });
 
-    res.json({ token });
+    res.json({ token, userId: user.id});
 
   } catch (error) {
     console.error('Error durante el login:', error);

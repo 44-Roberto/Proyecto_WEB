@@ -26,6 +26,7 @@ const [email, setEmail] = useState('');
 
       if (response.ok) {
         localStorage.setItem('token', data.token); // Almacena el token
+        localStorage.setItem('usuario_id', data.userId); // guarda el id de mi usuario
         navigate('/main-menu');
       } else {
         setError(data.message || 'Error al iniciar sesión');
