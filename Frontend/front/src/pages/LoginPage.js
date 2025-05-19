@@ -14,7 +14,7 @@ const [email, setEmail] = useState('');
   const handleLogin = async () => {
     setError('');
     try {
-      const response = await fetch('http://localhost:3001/login', { 
+      const response = await fetch('http://Backend-Proyecto-env.eba-frfujcdg.us-east-1.elasticbeanstalk.com/login', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
