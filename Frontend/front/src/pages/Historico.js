@@ -9,7 +9,7 @@ function Historico() {
 
   useEffect(() => {
     if (usuario_id) {
-      axios.get(`https://Backend-Proyecto-env.eba-frfujcdg.us-east-1.elasticbeanstalk.com/api/recomendaciones/historial/${usuario_id}`)
+      axios.get(`http://Backend-Proyecto-env.eba-frfujcdg.us-east-1.elasticbeanstalk.com/api/recomendaciones/historial/${usuario_id}`)
         .then(res => {
           const agrupado = {};
           res.data.forEach(item => {

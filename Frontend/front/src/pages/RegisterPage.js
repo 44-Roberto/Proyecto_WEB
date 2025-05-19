@@ -16,7 +16,7 @@ function RegisterPage() {
     
 
     try {
-      const response = await fetch('https://Backend-Proyecto-env.eba-frfujcdg.us-east-1.elasticbeanstalk.com/register', {
+      const response = await fetch('http://Backend-Proyecto-env.eba-frfujcdg.us-east-1.elasticbeanstalk.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
