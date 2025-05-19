@@ -14,7 +14,7 @@ const [email, setEmail] = useState('');
   const handleLogin = async () => {
     setError('');
     try {
-      const response = await fetch('http://Backend-Proyecto-env.eba-frfujcdg.us-east-1.elasticbeanstalk.com/login', { 
+      const response = await fetch('https://api.mrmoodify.click/login', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

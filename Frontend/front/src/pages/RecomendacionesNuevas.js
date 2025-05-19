@@ -56,7 +56,7 @@ function RecomendacionesNuevas() {
 
     setLoading(true);
     try {
-      const response = await fetch('http://Backend-Proyecto-env.eba-frfujcdg.us-east-1.elasticbeanstalk.com/api/analyze', {
+      const response = await fetch('https://api.mrmoodify.click/api/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content: imageBase64 }),

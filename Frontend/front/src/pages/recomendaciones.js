@@ -12,7 +12,7 @@ function Recomendaciones() {
 
   useEffect(() => {
     if (usuario_id && emocion_detectada) {
-      axios.post('http://Backend-Proyecto-env.eba-frfujcdg.us-east-1.elasticbeanstalk.com/api/recomendaciones', {
+      axios.post('https://api.mrmoodify.click/api/recomendaciones', {
         emocion: emocion_detectada,
         usuario_id: parseInt(usuario_id)
       })
